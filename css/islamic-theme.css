@@ -1,0 +1,100 @@
+/* ইসলামিক থিমের জন্য স্টাইল */
+
+:root {
+  /* নতুন কালার স্কিম - আরও ইসলামিক থিমের সাথে সামঞ্জস্যপূর্ণ */
+  --primary-color: #1d4ed8;     /* গভীর নীল */
+  --secondary-color: #0f766e;   /* গভীর টিল */
+  --accent-color: #065f46;      /* গভীর সবুজ */
+  --golden-accent: #a16207;     /* সোনালি - আরবি ক্যালিগ্রাফির জন্য */
+}
+
+/* ইসলামিক হেডার স্টাইল */
+header {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                    url('../images/islamic-pattern-bg.png');
+  background-size: 200px;
+  background-position: center;
+  border-bottom: 3px solid var(--golden-accent);
+}
+
+/* সেকশন টাইটেলের জন্য ইসলামিক স্টাইল */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 25px;
+  background-image: url('../images/islamic-divider.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px auto 0;
+}
+
+/* ইসলামিক কার্ড স্টাইল */
+.post-card, .dhikr-card, .etiquette-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  position: relative;
+}
+
+.post-card::before, .dhikr-card::before, .etiquette-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/islamic-corner.png');
+  background-size: contain;
+  opacity: 0.5;
+}
+
+/* আরবি টেক্সটের জন্য স্টাইল */
+.arabic-text {
+  font-family: 'Scheherazade New', serif;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: center;
+  margin: 20px 0;
+  direction: rtl;
+}
+
+/* ডার্ক মোড সাপোর্ট */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .post-card,
+body.dark-mode .dhikr-card,
+body.dark-mode .etiquette-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode header {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), 
+                    url('../images/islamic-pattern-bg.png');
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ডার্ক মোড টগল বাটন */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
