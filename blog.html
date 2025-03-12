@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার ব্লগ | সকল পোস্ট</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>আমার ব্লগ</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">হোম</a></li>
+                    <li><a href="blog.html" class="active">ব্লগ</a></li>
+                    <li><a href="categories.html">ক্যাটাগরি</a></li>
+                    <li><a href="about.html">আমার সম্পর্কে</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>সকল ব্লগ পোস্ট</h1>
+            <div class="breadcrumb">
+                <a href="index.html">হোম</a> / <span>ব্লগ</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" placeholder="পোস্ট খুঁজুন...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filter">
+                    <select>
+                        <option value="">সকল ক্যাটাগরি</option>
+                        <option value="tech">প্রযুক্তি</option>
+                        <option value="travel">ভ্রমণ</option>
+                        <option value="food">খাদ্য</option>
+                        <option value="lifestyle">লাইফস্টাইল</option>
+                    </select>
+                </div>
+                <div class="sort-filter">
+                    <select>
+                        <option value="newest">সর্বাধিক সাম্প্রতিক</option>
+                        <option value="oldest">পুরাতন</option>
+                        <option value="popular">জনপ্রিয়</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/post1.jpg" alt="পোস্ট ১">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">প্রযুক্তি</div>
+                        <h3 class="post-title">আর্টিফিশিয়াল ইন্টেলিজেন্স: ভবিষ্যতের দিকে একটি দৃষ্টি</h3>
+                        <div class="post-meta">
+                            <span class="post-date">মার্চ ১০, ২০২৫</span>
+                            <span class="post-author">লেখক: আহমেদ হাসান</span>
+                        </div>
+                        <p class="post-excerpt">আর্টিফিশিয়াল ইন্টেলিজেন্স কীভাবে আমাদের জীবনকে পরিবর্তন করছে এবং ভবিষ্যতে এর প্রভাব কেমন হবে তা নিয়ে আলোচনা...</p>
+                        <a href="post1.html" class="read-more">আরও পড়ুন</a>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/post2.jpg" alt="পোস্ট ২">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">ভ্রমণ</div>
+                        <h3 class="post-title">বান্দরবানের অপরূপ সৌন্দর্য</h3>
+                        <div class="post-meta">
+                            <span class="post-date">মার্চ ৫, ২০২৫</span>
+                            <span class="post-author">লেখক: ফারহানা আক্তার</span>
+                        </div>
+                        <p class="post-excerpt">বান্দরবানের পাহাড়ি এলাকার প্রাকৃতিক সৌন্দর্য এবং সেখানকার আদিবাসী সংস্কৃতি সম্পর্কে জানুন...</p>
+                        <a href="post2.html" class="read-more">আরও পড়ুন</a>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/post3.jpg" alt="পোস্ট ৩">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">খাদ্য</div>
+                        <h3 class="post-title">বাংলাদেশের ঐতিহ্যবাহী খাবার</h3>
+                        <div class="post-meta">
+                            <span class="post-date">ফেব্রুয়ারি ২৮, ২০২৫</span>
+                            <span class="post-author">লেখক: কামাল হোসেন</span>
+                        </div>
+                        <p class="post-excerpt">বাংলাদেশের বিভিন্ন অঞ্চলের ঐতিহ্যবাহী খাবার এবং তাদের প্রস্তুত প্রণালী সম্পর্কে বিস্তারিত...</p>
+                        <a href="post3.html" class="read-more">আরও পড়ুন</a>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/post4.jpg" alt="পোস্ট ৪">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">লাইফস্টাইল</div>
+                        <h3 class="post-title">সুস্থ জীবনযাপনের ১০টি টিপস</h3>
+                        <div class="post-meta">
+                            <span class="post-date">ফেব্রুয়ারি ২০, ২০২৫</span>
+                            <span class="post-author">লেখক: সাবরিনা রহমান</span>
+                        </div>
+                        <p class="post-excerpt">দৈনন্দিন জীবনে সুস্থ থাকার জন্য অনুসরণ করা যেতে পারে এমন ১০টি সহজ টিপস নিয়ে আলোচনা...</p>
+                        <a href="post4.html" class="read-more">আরও পড়ুন</a>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/post5.jpg" alt="পোস্ট ৫">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">প্রযুক্তি</div>
+                        <h3 class="post-title">ওয়েব ডেভেলপমেন্টের নতুন ট্রেন্ড</h3>
+                        <div class="post-meta">
+                            <span class="post-date">ফেব্রুয়ারি ১৫, ২০২৫</span>
+                            <span class="post-author">লেখক: রাকিব হাসান</span>
+                        </div>
+                        <p class="post-excerpt">২০২৫ সালে ওয়েব ডেভেলপমেন্টের ক্ষেত্রে কোন কোন নতুন ট্রেন্ড দেখা যাচ্ছে এবং কেন এগুলি গুরুত্বপূর্ণ...</p>
+                        <a href="post5.html" class="read-more">আরও পড়ুন</a>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/post6.jpg" alt="পোস্ট ৬">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">ভ্রমণ</div>
+                        <h3 class="post-title">সেন্ট মার্টিন: নীল সাগরের দ্বীপ</h3>
+                        <div class="post-meta">
+                            <span class="post-date">ফেব্রুয়ারি ১০, ২০২৫</span>
+                            <span class="post-author">লেখক: তানিয়া আক্তার</span>
+                        </div>
+                        <p class="post-excerpt">বাংলাদেশের একমাত্র প্রবাল দ্বীপ সেন্ট মার্টিনের অপরূপ সৌন্দর্য এবং ভ্রমণের টিপস নিয়ে বিস্তারিত...</p>
+                        <a href="post6.html" class="read-more">আরও পড়ুন</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">১</a>
+                <a href="#">২</a>
+                <a href="#">৩</a>
+                <a href="#">৪</a>
+                <a href="#">৫</a>
+                <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>আমাদের নিউজলেটার সাবস্ক্রাইব করুন</h2>
+                <p>নতুন পোস্ট এবং আপডেট পেতে আমাদের নিউজলেটারে সাবস্ক্রাইব করুন।</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="আপনার ইমেইল এড্রেস" required>
+                    <button type="submit" class="btn">সাবস্ক্রাইব</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>আমার ব্লগ</h2>
+                    <p>আপনার চিন্তাভাবনা শেয়ার করার জায়গা</p>
+                </div>
+                <div class="footer-links">
+                    <h3>দ্রুত লিঙ্ক</h3>
+                    <ul>
+                        <li><a href="index.html">হোম</a></li>
+                        <li><a href="blog.html">ব্লগ</a></li>
+                        <li><a href="categories.html">ক্যাটাগরি</a></li>
+                        <li><a href="about.html">আমার সম্পর্কে</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>সোশ্যাল মিডিয়া</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>যোগাযোগ</h3>
+                    <p><i class="fas fa-envelope"></i> info@amarblog.com</p>
+                    <p><i class="fas fa-phone"></i> +৮৮০ ১৭১২ ৩৪৫৬৭৮</p>
+                    <p><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৫ আমার ব্লগ। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
